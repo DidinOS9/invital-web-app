@@ -43,7 +43,8 @@
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-4">
                     <a href="/" class="navbar-brand">
-                        <h1 class="text-primary fw-bold mb-0">Dreamy<span class="text-dark">Affairs</span> </h1>
+                        <h2 class="text-primary fw-bold mb-0">Dreamy<span class="text-dark">Affairs 
+                            <br>Wedding </span> Organizer </h2>
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
@@ -88,7 +89,7 @@
         <!-- Hero Start -->
         <div class="container-fluid bg-light py-6 my-6 mt-0">
             <div class="container text-center animated bounceInDown">
-                <h1 class="display-1 mb-4">Invitation Digital</h1>
+                <h1 class="display-1 mb-4 text-primary">Invitation <span class="text-dark"> Digital</span></h1>
                 <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
                     <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item"><a href="/#services">Services</a></li>

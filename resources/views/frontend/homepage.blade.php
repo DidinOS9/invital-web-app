@@ -43,7 +43,8 @@
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-4">
                     <a href="#" class="navbar-brand">
-                        <h1 class="text-primary fw-bold mb-0">Dreamy<span class="text-dark">Affairs</span> </h1>
+                        <h2 class="text-primary fw-bold mb-0">Dreamy<span class="text-dark">Affairs <br>Wedding </span>
+                            Organizer</h2>
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
