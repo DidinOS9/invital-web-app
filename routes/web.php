@@ -22,6 +22,10 @@ Route::get('/invital', function () {
     return view('frontend.invital');
 });
 
+Route::get('/coba', function () {
+    return view('backend.superadmin.dashboard');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
