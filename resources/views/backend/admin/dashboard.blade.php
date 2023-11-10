@@ -1,4 +1,4 @@
-@extends('backend.superadmin.layouts.navbar')
+@extends('backend.admin.layouts.navbar')
 
 @section('content')
 <main id="main" class="main">
