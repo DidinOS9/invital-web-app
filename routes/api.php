@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 
 // users
 Route::apiResource('/users', App\Http\Controllers\Api\UserController::class);
+Route::get('/user/auth/login', 'App\Http\Controllers\Api\UserLoginController@login'); 
