@@ -1,4 +1,6 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href='https://postimg.cc/dhsg9ykJ' target='_blank'><img src='https://i.postimg.cc/dhsg9ykJ/Undangan-Digital-V-Website-1.png' border='0' width='300' alt='Undangan-Digital-V-Website-1'/></a></p>
+
+
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -6,6 +8,22 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
+## Instalasi Invital In Your Projek
+
+Jika anda adalah pengguna baru dalam Projek ini maka silahkan anda mengikuti tata cara menginstal seperti berikut:
+
+1. Download projek melalui Github.
+2. Jalankan perintah " composer update ".
+3. Jalankan perintah " npm instal ".
+4. Salin file .env.example lalu rubah menjadi .env | Dengan menggunakan perintah " cp .env.example .env ".
+5. Jalankan perintah " php artisan key:generate ".
+6. Buat database baru untuk projek ini.
+7. Ganti nama database yang berada di .env dengan database yang telah dibuat.
+8. Jalankan perintah " php artisan migrate ".
+9. Jalankan perintah " php artisan db:seed ".
+10. Jalankan Perintah " php artisan serve " dan " npm run dev ".
+
 
 ## About Laravel
 
