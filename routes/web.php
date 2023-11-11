@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Backend\Admin\AboutController as AdminAboutController;
 use App\Http\Controllers\Backend\Admin\AdminController;
+use App\Http\Controllers\Backend\Superadmin\AboutController;
 use App\Http\Controllers\Backend\Superadmin\SuperAdminController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -26,10 +28,12 @@ Route::get('/invital', function () {
 
 Route::middleware('auth', 'role:superadmin')->group(function () {
     Route::get('/superadmin/dashboard', [SuperAdminController::class, 'dashboard']);    
+    Route::get('/superadmin/about', [AboutController::class, 'about']);    
 });
 
 Route::middleware('auth', 'role:admin')->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
+    Route::get('/admin/about', [AdminAboutController::class, 'about']);    
 });
 
 Route::get('/dashboard', function () {
