@@ -11,7 +11,14 @@
     </li><!-- End Dashboard Nav -->
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="{{ url('admin/visitor') }}">
+        <i class="bi bi-envelope"></i>
+        <span>Daftar Tamu</span>
+        </a>
+    </li><!-- End Daftar Tamu Page Nav -->
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('admin/weddings') }}">
         <i class="bi bi-envelope"></i>
         <span>Daftar Acara</span>
         </a>

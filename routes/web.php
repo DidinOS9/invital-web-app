@@ -2,8 +2,12 @@
 
 use App\Http\Controllers\Backend\Admin\AboutController as AdminAboutController;
 use App\Http\Controllers\Backend\Admin\AdminController;
+use App\Http\Controllers\Backend\Admin\Visitor\VisitorController;
+use App\Http\Controllers\Backend\Admin\Weddings\WeddingsController;
 use App\Http\Controllers\Backend\Superadmin\AboutController;
+use App\Http\Controllers\Backend\Superadmin\Acara\AcaraController;
 use App\Http\Controllers\Backend\Superadmin\SuperAdminController;
+use App\Http\Controllers\Backend\Superadmin\Users\UsersController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,13 +31,17 @@ Route::get('/invital', function () {
 });
 
 Route::middleware('auth', 'role:superadmin')->group(function () {
-    Route::get('/superadmin/dashboard', [SuperAdminController::class, 'dashboard']);    
-    Route::get('/superadmin/about', [AboutController::class, 'about']);    
+    Route::get('superadmin/dashboard', [SuperAdminController::class, 'dashboard']);  
+    Route::resource('superadmin/acara', AcaraController::class);
+    Route::resource('superadmin/users', UsersController::class);
+    Route::get('superadmin/about', [AboutController::class, 'about']);    
 });
 
 Route::middleware('auth', 'role:admin')->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
-    Route::get('/admin/about', [AdminAboutController::class, 'about']);    
+    Route::get('admin/dashboard', [AdminController::class, 'dashboard']);
+    Route::resource('admin/visitor', VisitorController::class);
+    Route::resource('admin/weddings', WeddingsController::class);
+    Route::get('admin/about', [AdminAboutController::class, 'about']);    
 });
 
 Route::get('/dashboard', function () {

@@ -11,14 +11,14 @@
     </li><!-- End Dashboard Nav -->
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{ url('superadmin/acara') }}">
         <i class="bi bi-envelope"></i>
         <span>Daftar Acara</span>
         </a>
     </li><!-- End Daftar Acara Page Nav -->
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{ url('superadmin/users') }}">
         <i class="bi bi-person"></i>
         <span>Daftar Pengguna</span>
         </a>
