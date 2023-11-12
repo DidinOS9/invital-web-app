@@ -68,10 +68,6 @@
                                         onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
-                                        <button type="submit" class="btn btn-danger"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-trash-fill"></i>
-                                        </button>
                                     </form>
                                 </div>
                             </td>
@@ -89,10 +85,6 @@
                                         <button type="submit" class="btn btn-warning"
                                         onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
                                             <i class="bi bi-pencil-fill"></i>
-                                        </button>
-                                        <button type="submit" class="btn btn-danger"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-trash-fill"></i>
                                         </button>
                                     </form>
                                 </div>

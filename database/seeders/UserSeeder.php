@@ -16,7 +16,7 @@ class userSeeder extends Seeder
         // Data dummy
         DB::table('users')->insert([
             [
-                'name' => 'Super Admin',
+                'name' => 'Dreamy Affairs',
                 'username' => 'superadmin',
                 'email' => 'superadmin@gmail.com',
                 'email_verified_at' => now(),
@@ -28,9 +28,21 @@ class userSeeder extends Seeder
                 'updated_at' => now()
             ],
             [
-                'name' => 'Admin',
+                'name' => 'Muhammad Zainudin',
                 'username' => 'admin',
                 'email' => 'admin@gmail.com',
+                'email_verified_at' => now(),
+                'role' => 'admin',
+                'status' => 'active',
+                'password' => bcrypt('12341234'),
+                'remember_token' => Str::random(10), // Menggunakan Str::random() untuk menghasilkan token yang acak
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Zulfikar Kahfi',
+                'username' => 'kahfi',
+                'email' => 'kahfi@gmail.com',
                 'email_verified_at' => now(),
                 'role' => 'admin',
                 'status' => 'active',

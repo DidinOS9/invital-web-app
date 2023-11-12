@@ -23,7 +23,8 @@ class User extends Authenticatable
         'email',
         'password',
         'phone_number',
-        'instagram'
+        'instagram',
+        'alamat'
     ];
 
     /**
@@ -35,6 +36,15 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($user) {
+            $user->remember_token = bin2hex(random_bytes(5)); // Menghasilkan token acak
+        });
+    }
 
     /**
      * The attributes that should be cast.

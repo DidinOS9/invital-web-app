@@ -22,7 +22,8 @@ return new class extends Migration
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->string('phone_number')->nullable();
             $table->string('instagram')->nullable();
-            $table->rememberToken();
+            $table->string('alamat')->nullable();
+            $table->string('remember_token')->unique()->nullable();
             $table->timestamps();
         });
     }
