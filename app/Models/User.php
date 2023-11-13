@@ -46,6 +46,11 @@ class User extends Authenticatable
         });
     }
 
+    public function acara()
+    {
+        return $this->hasMany(Acara::class, 'id_nama_suami', 'id');
+    }
+
     /**
      * The attributes that should be cast.
      *

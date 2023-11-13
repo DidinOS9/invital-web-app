@@ -25,8 +25,7 @@ class UsersController extends Controller
         return view('backend.superadmin.add_users.create', compact('users'));
     }
 
-    public function store(Request $request): RedirectResponse
-    {
+    public function store(Request $request): RedirectResponse {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255'],
@@ -50,21 +49,25 @@ class UsersController extends Controller
                         ->with('succes', 'Data Client baru telah berhasil disimpan.');
     }
 
-    public function edit(Request $request, $id) {
-        $users = DB::table('users')->where('id', $id)->first();
-        return view('backend.superadmin.add_users.create', compact('users'));
+    public function edit(Request $request, $id) 
+    {
+        $users = User::findOrfail($id);
+        return view('backend.superadmin.add_users.edit', compact('users'));
     }
 
-    public function update(Request $request) {
-        DB::table('users')->where('id',$request->id)->update([
-            'name' => $request->name,
-            'username' => $request->username,
-            'email' => $request->email,
-            'password' => $request->password,
-            'phone_number' => $request->phone_number,
-            'instagram' => $request->instagram,
-            'alamat' => $request->alamat
-        ]);
+    public function update(Request $request, $id) {
+        // DB::table('users')->where('id',$request->id)->update([
+        //     'name' => $request->name,
+        //     'username' => $request->username,
+        //     'email' => $request->email,
+        //     'password' => $request->password,
+        //     'phone_number' => $request->phone_number,
+        //     'instagram' => $request->instagram,
+        //     'alamat' => $request->alamat
+        // ]);
+
+        $data = User::findOrFail($id); 
+        $data->update($request->all());
 
         return redirect()->route('users.index')
         ->with('succes', 'Data Client Berhasil Diperbarui.');

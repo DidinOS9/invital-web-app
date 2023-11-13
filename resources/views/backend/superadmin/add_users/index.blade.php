@@ -52,8 +52,7 @@
                                 <td>
                                     <div class="btn-group">
                                         <form action="{{ route('users.destroy',$item->id) }}" method="POST">
-                                        <a href="{{ route('users.edit',$item->id) }}"
-                                            class="btn btn-warning">
+                                        <a class="btn btn-warning" href="{{ route('users.edit',$item->id) }}">
                                             <i class="bi bi-pencil-fill"></i>
                                         </a>
                                         @csrf
