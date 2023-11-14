@@ -35,13 +35,13 @@
 
 
                         <!-- General Form Elements -->
-                        <form class="row g-3" action="{{ isset($user) ?
-                            route('users.update', $user->id) : route('users.store') }}"
+                        <form class="row g-3" action="{{ isset($users) ?
+                            route('users.update', $users->id) : route('users.store') }}"
                             id="user_form" method="POST">
                         @csrf
                         @method('PUT')
-                            @if(isset($user))
-                                <input type="hidden" name="id" value="{{ $user->id }}">
+                            @if(isset($users))
+                                <input type="hidden" name="id" value="{{ $users->id }}">
                             @endif
 
                                 <div class="row mb-3">
