@@ -21,7 +21,7 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"> Mengubah Data Acara Baru </h5>
+                            <h5 class="card-title"> Mengubah Data Acara</h5>
             
                             @if ($errors->any())
                                 <div class="alert alert-danger">

@@ -44,9 +44,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($dataacara as $item)
+                        @foreach ($dataacara as $no => $item)
                         <tr>
-                            <td>{{ $item->id }}</td>
+                            <th scope="row">{{ ++$no }}</th>
                             <td>{{ $item->namasuami->name }}</td>
                             <td>{{ $item->nama_istri }}</td>
                             <td>{{ $item->tgl_akad }}</td>

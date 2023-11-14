@@ -28,6 +28,7 @@
                         <tr>
                         <th scope="col">#</th>
                         <th scope="col">Nama Suami</th>
+                        <th scope="col">Nama Istri</th>
                         <th scope="col">Tanggal Akad</th>
                         <th scope="col">Email</th>
                         <th scope="col">Nomor HP</th>
@@ -36,13 +37,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($dataacara as $no =>  $item)
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Brandon Jacob</td>
-                            <td>2016-05-25</td>
-                            <td>brandon@gmail.com</td>
-                            <td>084545454334</td>
-                            <td>Singonjuruh, Banyuwangi</td>
+                            <th scope="row">{{ ++$no }}</th>
+                            <td>{{ $item->namasuami->name }}</td>
+                            <td>{{ $item->nama_istri }}</td>
+                            <td>{{ $item->tgl_akad }}</td>
+                            <td>{{ $item->namasuami->email }}</td>
+                            <td>{{ $item->namasuami->phone_number }}</td>
+                            <td>{{ $item->alamat_akad }}</td>
                             <td>
                                 <div class="btn-group">
                                     <form>
@@ -54,42 +57,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Bridie Kessler</td>
-                        <td>2016-05-25</td>
-                            <td>brandon@gmail.com</td>
-                            <td>084545454334</td>
-                            <td>Singonjuruh, Banyuwangi</td>
-                            <td>
-                                <div class="btn-group">
-                                    <form>
-                                        <button type="submit" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-pencil-fill"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Ashleigh Langosh</td>
-                        <td>2016-05-25</td>
-                            <td>brandon@gmail.com</td>
-                            <td>084545454334</td>
-                            <td>Singonjuruh, Banyuwangi</td>
-                            <td>
-                                <div class="btn-group">
-                                    <form>
-                                        <button type="submit" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-pencil-fill"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                     </table>
                     <!-- End Table with stripped rows -->

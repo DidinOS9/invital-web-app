@@ -22,6 +22,9 @@ class userSeeder extends Seeder
                 'email_verified_at' => now(),
                 'role' => 'superadmin',
                 'status' => 'active',
+                'phone_number' => '085232894337',
+                'instagram' => '@admin',
+                'alamat' => 'Banyuwangi',
                 'password' => bcrypt('12341234'),
                 'remember_token' => Str::random(10), // Menggunakan Str::random() untuk menghasilkan token yang acak
                 'created_at' => now(),
@@ -34,6 +37,9 @@ class userSeeder extends Seeder
                 'email_verified_at' => now(),
                 'role' => 'admin',
                 'status' => 'active',
+                'phone_number' => '085232387443',
+                'instagram' => '@muhammad',
+                'alamat' => 'Banyuwangi',
                 'password' => bcrypt('12341234'),
                 'remember_token' => Str::random(10), // Menggunakan Str::random() untuk menghasilkan token yang acak
                 'created_at' => now(),
@@ -46,6 +52,9 @@ class userSeeder extends Seeder
                 'email_verified_at' => now(),
                 'role' => 'admin',
                 'status' => 'active',
+                'phone_number' => '084734994773',
+                'instagram' => '@kahfi',
+                'alamat' => 'Banyuwangi',
                 'password' => bcrypt('12341234'),
                 'remember_token' => Str::random(10), // Menggunakan Str::random() untuk menghasilkan token yang acak
                 'created_at' => now(),

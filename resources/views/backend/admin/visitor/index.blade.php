@@ -19,8 +19,13 @@
             <div class="col-lg-12">
     
                 <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        @if ($message = Session::get('success'))
+                        <div class="alert alert-success">
+                            <p>{{ $message }}</p>
+                        </div>
+                        @endif
     
                     <a href="{{ route('visitor.create') }}"><button class="btn btn-primary" type="button">Tambah Tamu</button></a>
                     
@@ -38,18 +43,21 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($datatamu as $no => $item)
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Brandon Jacob</td>
-                            <td>VIP</td>
-                            <td>Singonjuruh, Banyuwangi</td>
+                            <th scope="row">{{ ++$no }}</th>
+                            <td>{{ $item->nama_tamu }}</td>
+                            <td>{{ $item->status }}</td>
+                            <td>{{ $item->alamat }}</td>
                             <td>
                                 <div class="btn-group">
-                                    <form>
-                                        <button type="submit" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
+                                    <form action="{{ route('visitor.destroy', $item->id) }}" method="POST">
+                                        <a href="{{ route('visitor.edit',$item->id) }}"
+                                            class="btn btn-warning">
                                             <i class="bi bi-pencil-fill"></i>
-                                        </button>
+                                        </a>
+                                        @csrf
+                                        @method('DELETE')
                                         <button type="submit" class="btn btn-danger"
                                         onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
                                             <i class="bi bi-trash-fill"></i>
@@ -58,46 +66,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Bridie Kessler</td>
-                        <td>VVIP</td>
-                            <td>Singonjuruh, Banyuwangi</td>
-                            <td>
-                                <div class="btn-group">
-                                    <form>
-                                        <button type="submit" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-pencil-fill"></i>
-                                        </button>
-                                        <button type="submit" class="btn btn-danger"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-trash-fill"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Ashleigh Langosh</td>
-                        <td>Regular</td>
-                            <td>Singonjuruh, Banyuwangi</td>
-                            <td>
-                                <div class="btn-group">
-                                    <form>
-                                        <button type="submit" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-pencil-fill"></i>
-                                        </button>
-                                        <button type="submit" class="btn btn-danger"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-trash-fill"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                     </table>
                     <!-- End Table with stripped rows -->
