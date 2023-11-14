@@ -20,6 +20,7 @@
     
                 <div class="card">
                 <div class="card-body">
+
                     <h5 class="card-title"></h5>
     
                     <!-- Table with stripped rows -->
@@ -48,10 +49,16 @@
                             <td>{{ $item->alamat_akad }}</td>
                             <td>
                                 <div class="btn-group">
-                                    <form>
-                                        <button type="submit" class="btn btn-warning"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
+                                    <form action="" method="POST">
+                                        <a href="{{ route('weddings.show',$item->id) }}"
+                                            class="btn btn-warning">
                                             <i class="bi bi-pencil-fill"></i>
+                                        </a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger"
+                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
+                                            <i class="bi bi-trash-fill"></i>
                                         </button>
                                     </form>
                                 </div>
