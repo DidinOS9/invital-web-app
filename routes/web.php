@@ -4,6 +4,8 @@ use App\Http\Controllers\Backend\Admin\AboutController as AdminAboutController;
 use App\Http\Controllers\Backend\Admin\AdminController;
 use App\Http\Controllers\Backend\Admin\Visitor\VisitorController;
 use App\Http\Controllers\Backend\Admin\Weddings\WeddingsController;
+use App\Http\Controllers\Backend\Admin\Weddings\addVisitorsController;
+use App\Http\Controllers\Backend\Admin\MonitorTamuController;
 use App\Http\Controllers\Backend\Superadmin\AboutController;
 use App\Http\Controllers\Backend\Superadmin\Acara\AcaraController;
 use App\Http\Controllers\Backend\Superadmin\SuperAdminController;
@@ -40,6 +42,9 @@ Route::middleware('auth', 'role:superadmin')->group(function () {
 Route::middleware('auth', 'role:admin')->group(function () {
     Route::get('admin/dashboard', [AdminController::class, 'dashboard']);
     Route::resource('admin/visitor', VisitorController::class);
+    Route::get('/admin/monitor', [MonitorTamuController::class, 'index']);
+    Route::get('/admin/weddings/add-visitors', [addVisitorsController::class, 'index']);
+    Route::post('/admin/undangan', [addVisitorsController::class, 'selectedTamu'])->name('admin.undangan');
     Route::resource('admin/weddings', WeddingsController::class);
     Route::get('admin/about', [AdminAboutController::class, 'about']);    
 });

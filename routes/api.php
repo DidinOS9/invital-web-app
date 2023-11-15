@@ -21,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 // users
 Route::apiResource('/users', App\Http\Controllers\Api\UserController::class);
 Route::get('/user/auth/login', 'App\Http\Controllers\Api\UserLoginController@login'); 
+Route::get('api_kehadiran', 'App\Http\Controllers\Api\ApiKehadiranController@getAll');
+Route::post('api_kehadiran', 'App\Http\Controllers\Api\ApiKehadiranController@createHadir');

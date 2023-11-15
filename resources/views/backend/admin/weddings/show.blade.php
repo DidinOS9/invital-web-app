@@ -25,7 +25,7 @@
                             
                             <div class="row">
                                 <div class="col-lg-4 ml-auto">
-                                    <a class="btn btn-primary">
+                                    <a href="{{ url('admin/monitor') }}" target="_blank" class="btn btn-primary">
                                         <button class="btn btn-primary" type="button">Tampilan Halaman Monitor</button>
                                     </a>
                                 </div>
@@ -214,7 +214,7 @@
             
     
                             <div class="text-center">
-                                <a class="btn btn-primary" href="{{ route('weddings.index') }}" style="width: 200px" type="button">Added Visitor</a>
+                                <a class="btn btn-primary" href="{{ url('/admin/weddings/add-visitors?id=' . $dataacara->id) }}" style="width: 200px" type="button">Added Visitor</a>
                                 <a class="btn btn-secondary" href="{{ route('weddings.index') }}" style="width: 200px" type="button">Back</a>
                             </div>
             
