@@ -13,7 +13,7 @@ class addVisitorsController extends Controller
 {
     public function index(Request $request) {
         $id_acara = $request->input('id');
-        $tamu = Tamu::all();
+        $tamu = Tamu::where('id_suami', auth()->user()->id)->get();
         return view('backend.admin.weddings.addvisitor', compact('tamu', 'id_acara'));
     }
 

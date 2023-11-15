@@ -8,7 +8,8 @@
     <nav>
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item active">Pilih Tamu : </li>
+        <li class="breadcrumb-item"><a href="">Acara</a></li>
+        <li class="breadcrumb-item active">Pilih Tamu </li>
         </ol>
     </nav>
     </div><!-- End Page Title -->
@@ -19,7 +20,7 @@
             <div class="col-lg-12">
     
                 <div class="card">
-                <div class="card-body">
+                <div class="card-body"> <br>
 
                     {{-- <h5 class="card-title">{{ $id_acara }}</h5> --}}
     
@@ -48,8 +49,11 @@
                         @endforeach
                     </tbody>
                     </table>
-                    <button class="btn btn-primary" type="submit" onclick="return validateForm()">Buat Undangan</button>
-</form>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="return validateForm()" style="width: 200px" type="submit">Buat Undangan</button>
+                        <a class="btn btn-secondary" href="{{ route('weddings.index') }}" style="width: 200px" type="button">Back</a>
+                    </div>
+                    </form>
                     <!-- End Table with stripped rows -->
     
                 </div>

@@ -20,17 +20,14 @@
                 <div class="row">
 
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> Detail Data Acara</h5>
+                        <div class="card-body"> <br>
                             
-                            <div class="row">
+                            <div class="row justify-content-end">
                                 <div class="col-lg-4 ml-auto">
-                                    <a href="{{ url('admin/monitor') }}" target="_blank" class="btn btn-primary">
-                                        <button class="btn btn-primary" type="button">Tampilan Halaman Monitor</button>
-                                    </a>
+                                    <a href="{{ url('admin/monitor') }}" target="_blank" class="btn btn-primary">Tampilan Halaman Monitor</a>
                                 </div>
                             </div>
-                        <br>                            
+                            <br>                            
 
                             <!-- General Form Elements -->
                             <form class="row g-3" action="{{ isset($dataacara) ?
@@ -44,21 +41,9 @@
                                     <div class="col-sm-10">
                                     <input type="text" class="form-control" id="id_suami"
                                     name="id_suami" value="{{ isset($dataacara) ?
-                                        $dataacara->id_nama_suami : '' }}" readonly disabled  required>
+                                        $dataacara->namasuami->name : '' }}" readonly disabled  required>
                                     </div>
                                 </div>
-                            {{-- <div class="row mb-3">
-                                <label for="inputText" class="col-sm-2 col-form-label">Nama Suami <span class="required">*</span></label>
-                                <div class="col-sm-10">
-                                    <select class="form-select" id="id_suami" name="id_suami" required>
-                                        @foreach($namasuami as $item)
-                                        @if ($item->id == $dataacara->id_nama_suami)
-                                            <option value="{{ $item->id}} selected readonly ">{{ $item->name }}</option>   
-                                        @endif
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div> --}}
                             <div class="row mb-3">
                                 <label for="inputText" class="col-sm-2 col-form-label">Nama Ayah Suami <span class="required">*</span></label>
                                 <div class="col-sm-10">

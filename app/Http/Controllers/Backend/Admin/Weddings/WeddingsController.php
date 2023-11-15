@@ -20,6 +20,8 @@ class WeddingsController extends Controller
         $dataacara = Acara::findOrFail($id);
         $datauser = User::all();
 
+        // dd($dataacara);
+
         return view('backend.admin.weddings.show', compact('dataacara', 'datauser'));
     }
 

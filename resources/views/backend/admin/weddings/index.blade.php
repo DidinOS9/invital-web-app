@@ -52,14 +52,8 @@
                                     <form action="" method="POST">
                                         <a href="{{ route('weddings.show',$item->id) }}"
                                             class="btn btn-warning">
-                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-sunrise"></i>
                                         </a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini ?')">
-                                            <i class="bi bi-trash-fill"></i>
-                                        </button>
                                     </form>
                                 </div>
                             </td>
