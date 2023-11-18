@@ -74,7 +74,7 @@
                                 <div style="width: 1250px; height: 182px; left: 0px; top: 0px; position: absolute; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.50); border-radius: 30px">
                                     <br><h2>Selamat Datang</h2>
                                     <h1 class="display-5">{{ isset($nama) ? "$nama" : "Tamu belum datang" }}</h1>
-                                    <h2>{{ isset($nama) ? "Tamu $nama->$status" : "Status " }}</h2>
+                                    <h2>{{ isset($status) ? "Tamu $status" : "" }}</h2>
                                 </div>
                             </div>
                         </div>
