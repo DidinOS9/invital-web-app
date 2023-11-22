@@ -15,7 +15,7 @@ class TamuSeeder extends Seeder
     public function run()
     {
         // Menghapus semua data yang ada di tabel users jika diperlukan
-        Tamu::truncate();
+        // Tamu::truncate();
 
         // Data dummy
         DB::table('tamu')->insert([
