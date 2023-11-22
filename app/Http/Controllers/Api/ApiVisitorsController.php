@@ -20,6 +20,6 @@ class ApiVisitorsController extends Controller
             return $item;
         });
 
-        return response()->json(['visitor' => $tamu], 200);
+        return response()->json(['message' => 200,'visitor' => $tamu]);
     }
 }
