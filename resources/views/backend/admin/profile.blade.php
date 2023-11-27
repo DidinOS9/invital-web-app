@@ -23,7 +23,7 @@
     
                     <img src="{{ asset('backend/assets/img/profile-img.jpg') }}" alt="Profile" class="rounded-circle">
                     <h2 class="username">{{ Auth::user()->name }}</h2>
-                    <h3>Vendor Organizer</h3>
+                    <h3>Client Organizer</h3>
                     <div class="social-links mt-2">
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -143,7 +143,7 @@
                         <div class="row mb-3">
                             <label for="Job" class="col-md-4 col-lg-3 col-form-label">Job</label>
                             <div class="col-md-8 col-lg-9">
-                            <input name="job" type="text" class="form-control" id="Job" value="Vendor Organizer">
+                            <input name="job" type="text" class="form-control" id="Job" value="Client Organizer">
                             </div>
                         </div>
     

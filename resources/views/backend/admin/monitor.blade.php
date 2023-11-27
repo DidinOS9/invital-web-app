@@ -65,7 +65,7 @@
 
             <div class="container text-center animated bounceInDown">
                 <h1 class="display-1 mb-4 text-primary">The <span class="text-dark"> Wedding</span></h1>
-                <h1 class="display-1 mb-4 text-primary"><span class="text-dark"> Bambang & </span> Qomariatun </h1>
+                <h1 class="display-1 mb-4 text-primary"><span class="text-dark"> {{ Auth::user()->name }} & </span> Qomariatun </h1>
                 <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown"></ol>
                 <div class="container-fluid team py-6" id='team'>
                     <div class="container">
