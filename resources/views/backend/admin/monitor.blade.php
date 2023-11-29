@@ -33,11 +33,11 @@
 
         
 
-        <!-- Spinner Start -->
+        {{-- <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
-        <!-- Spinner End -->
+        <!-- Spinner End --> --}}
 
 
         <!-- Navbar start -->
@@ -63,7 +63,7 @@
 
 
 
-            <div class="container text-center animated bounceInDown">
+            <div class="container text-center">
                 <h1 class="display-1 mb-4 text-primary">The <span class="text-dark"> Wedding</span></h1>
                 <h1 class="display-1 mb-4 text-primary"><span class="text-dark"> {{ Auth::user()->name }} & </span> Qomariatun </h1>
                 <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown"></ol>
@@ -86,8 +86,13 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        {{-- <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>    --}}
 
+        <script>
+            setTimeout(function(){
+                location.reload();
+            }, 5000); // Auto-reload setiap 5 detik (sesuaikan dengan kebutuhan Anda)
+        </script>
         
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
