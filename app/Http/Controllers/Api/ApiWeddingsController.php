@@ -28,16 +28,20 @@ class ApiWeddingsController extends Controller
 
     public function show($id) {
         if ($id == 1) {
-            return $this->index(); // Jika id adalah 1, panggil metode index
+            return $this->index(); // If id is 1, call the index method
         } else {
-            $suami = User::where('id', $id)->select('name')->first();
             $acara = Acara::where('id_nama_suami', $id)
                 ->select('nama_istri', 'alamat_resepsi', 'tgl_resepsi')
-                ->first();
-
-                $acara['name_suami'] = $suami->name;
-
+                ->get();
+    
+            $suami = User::find($id); // Assuming 'id' is the primary key of the User model
+    
+            foreach ($acara as $event) {
+                $event['nama_suami'] = $suami->name;
+            }
+    
             return response()->json($acara, 200);
         }
     }
+    
 }
