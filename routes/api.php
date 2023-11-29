@@ -24,3 +24,5 @@ Route::get('/user/auth/login', 'App\Http\Controllers\Api\UserLoginController@log
 Route::get('api_kehadiran', 'App\Http\Controllers\Api\ApiKehadiranController@getAll');
 Route::post('api_kehadiran', 'App\Http\Controllers\Api\ApiKehadiranController@createHadir');
 Route::get('visitors', 'App\Http\Controllers\Api\ApiVisitorsController@getAll');
+Route::get('acara/{id}', 'App\Http\Controllers\Api\ApiWeddingsController@show');
+Route::get('acara', 'App\Http\Controllers\Api\ApiWeddingsController@index');
