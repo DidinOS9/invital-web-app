@@ -30,9 +30,12 @@ Route::get('/', function () {
     return view('frontend.homepage');
 });
 
-Route::get('/invital', function () {
-    return view('frontend.invital');
-});
+Route::get('/decoration', function () {return view('frontend.service.decoration');});
+Route::get('/invital', function () {return view('frontend.service.invital');});
+Route::get('/entertaiment', function () {return view('frontend.service.entertaiment');});
+Route::get('/documentation', function () {return view('frontend.service.documentation');});
+Route::get('/catering', function () {return view('frontend.service.catering');});
+Route::get('/vahicle', function () {return view('frontend.service.vahicle');});
 
 Route::middleware('auth', 'role:superadmin')->group(function () {
     Route::get('superadmin/dashboard', [SuperAdminController::class, 'dashboard']);  
