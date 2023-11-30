@@ -48,18 +48,21 @@
                             @csrf
                             <div class="row mt-5">
                                 <label for="inputFile" class="col-sm-3 col-form-label"><strong>Upload List Tamu</strong></label>
-                                <div class="col-sm-9">
+                                <div class="col-sm-6">
                                     <input class="form-control" type="file" name="file" id="fileInput" accept=".xlsx, .xls">
                                     @error('file')
                                         <small class="text-danger">{{ $error }}</small>
                                     @enderror
                                 </div>
+                                <div class="col-sm-3">
+                                    <button type="button" class="btn btn-primary" onclick="validateFile()">Unggah File</button>
+                                </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-sm-10">
-                                    <button type="button" class="btn btn-primary" onclick="validateFile()">Unggah File</button>
-                                    <a href="{{ route('visitor.create') }}"><button class="btn btn-secondary" type="button">Tambah Tamu</button></a>
-                                    <a href="{{ route('admin.visitor.download-pdf') }}" class="btn btn-success"><i class="bx bxs-download"></i> Download List Tamu</a>
+                                    <a href="{{ route('visitor.create') }}"><button class="btn btn-success" type="button">Tambah Tamu</button></a>
+                                    <a href="{{ route('admin.visitor.template') }}"><button class="btn btn-secondary" type="button">Template Excel Add Tamu</button></a>
+                                    <a href="{{ route('admin.visitor.download-pdf') }}" class="btn btn-info"><i class="bx bxs-download"></i> Download List Tamu</a>
                                 </div>
                             </div>
                         </form>

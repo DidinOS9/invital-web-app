@@ -88,4 +88,10 @@ class VisitorController extends Controller
 
         return $pdf->download('list_tamu.pdf');
     }
+
+    public function template()
+    {
+        $path=public_path('template/visitor_invital.xlsx');
+        return response()->download($path);
+    }
 }
