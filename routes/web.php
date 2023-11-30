@@ -56,6 +56,7 @@ Route::middleware('auth', 'role:admin')->group(function () {
     Route::get('admin/about', [AdminAboutController::class, 'about']);
     Route::post('admin/import', [VisitorController::class, 'import'])->name('admin.visitor.import');
     Route::post('admin/import-visitor', [VisitorController::class, 'import_visitor'])->name('admin.visitor.import-visitor');
+    Route::get('visitor/download-pdf', [VisitorController::class, 'downloadPdf'])->name('admin.visitor.download-pdf');
 });
 
 // Route::get('/dashboard', function () {

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Imports\VisitorImport;
 use App\Models\Tamu;
 use App\Models\User;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -59,7 +60,8 @@ class VisitorController extends Controller
         DB::table('tamu')->where('id',$id)->delete();
         return redirect()->route('visitor.index')->with('success', 'Data Tamu berhasil dihapus');
     }
-    
+
+    //Menambahkan daftar tamu dengan file spreadsheet
     public function import(Request $request) {
         return view('visitor.index');
     }
@@ -74,8 +76,16 @@ class VisitorController extends Controller
         } catch (\Exception $e) {
             return redirect()->route('visitor.index')->with('error', 'Gagal mengimpor data tamu. Pastikan file Excel valid.');
         }
-
-
         // return redirect()->back();
+    }
+
+    //Mendownload daftar tamu
+    public function downloadPdf(PDF $pdf)
+    {
+        $datatamu = Tamu::where('id_suami', auth()->user()->id)->get();
+        
+        $pdf = $pdf->loadView('backend.admin.visitor.pdf', compact('datatamu'));
+
+        return $pdf->download('list_tamu.pdf');
     }
 }

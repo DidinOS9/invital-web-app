@@ -59,6 +59,7 @@
                                 <div class="col-sm-10">
                                     <button type="button" class="btn btn-primary" onclick="validateFile()">Unggah File</button>
                                     <a href="{{ route('visitor.create') }}"><button class="btn btn-secondary" type="button">Tambah Tamu</button></a>
+                                    <a href="{{ route('admin.visitor.download-pdf') }}" class="btn btn-success"><i class="bx bxs-download"></i> Download List Tamu</a>
                                 </div>
                             </div>
                         </form>
