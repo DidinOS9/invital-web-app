@@ -18,6 +18,8 @@ class MonitorTamuController extends Controller
         $nama = Tamu::where('id', $id)->value('nama_tamu');
         $status = Tamu::where('id', $id)->value('status');
 
+        // dd($istri);
+
         return view('backend.admin.monitor', compact('nama', 'status', 'istri'));
     }
 }
