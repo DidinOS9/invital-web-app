@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Backend\Admin\Visitor;
 
 use App\Http\Controllers\Controller;
+use App\Imports\VisitorImport;
 use App\Models\Tamu;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class VisitorController extends Controller
 {
@@ -56,5 +58,24 @@ class VisitorController extends Controller
     {
         DB::table('tamu')->where('id',$id)->delete();
         return redirect()->route('visitor.index')->with('success', 'Data Tamu berhasil dihapus');
-    }    
+    }
+    
+    public function import(Request $request) {
+        return view('visitor.index');
+    }
+
+    public function import_visitor(Request $request) {
+        // dd($request->all());
+        try {
+            //code...
+            Excel::import(new VisitorImport(), $request->file('file'));
+            
+            return redirect()->route('visitor.index')->with('success', 'Data Tamu Baru Berhasil Disimpan');
+        } catch (\Exception $e) {
+            return redirect()->route('visitor.index')->with('error', 'Gagal mengimpor data tamu. Pastikan file Excel valid.');
+        }
+
+
+        // return redirect()->back();
+    }
 }

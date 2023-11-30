@@ -53,7 +53,9 @@ Route::middleware('auth', 'role:admin')->group(function () {
     Route::post('/admin/undangan', [addVisitorsController::class, 'selectedTamu'])->name('admin.undangan');
     Route::resource('admin/weddings', WeddingsController::class);
     Route::resource('admin/profile', AdminProfileController::class);
-    Route::get('admin/about', [AdminAboutController::class, 'about']);    
+    Route::get('admin/about', [AdminAboutController::class, 'about']);
+    Route::post('admin/import', [VisitorController::class, 'import'])->name('admin.visitor.import');
+    Route::post('admin/import-visitor', [VisitorController::class, 'import_visitor'])->name('admin.visitor.import-visitor');
 });
 
 // Route::get('/dashboard', function () {
