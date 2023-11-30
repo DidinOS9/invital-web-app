@@ -7,8 +7,8 @@
     <h1>Tambah Tamu</h1>
     <nav>
         <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">Home</a></li>
-        <li class="breadcrumb-item"><a href="">Daftar Tamu</a></li>
+        <li class="breadcrumb-item"><a href="{{ url('admin/dashboard') }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ url('admin/visitor') }}">Daftar Tamu</a></li>
         <li class="breadcrumb-item active">Tambah Tamu</li>
         </ol>
     </nav>
