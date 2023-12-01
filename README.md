@@ -14,7 +14,7 @@
 Jika anda adalah pengguna baru dalam Projek ini maka silahkan anda mengikuti tata cara menginstal seperti berikut:
 
 1. Download projek melalui Github.
-2. Jalankan perintah " composer update ".
+2. Jalankan perintah " composer install / composer update ".
 3. Jalankan perintah " npm instal ".
 4. Salin file .env.example lalu rubah menjadi .env | Dengan menggunakan perintah " cp .env.example .env ".
 5. Jalankan perintah " php artisan key:generate ".
