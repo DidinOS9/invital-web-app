@@ -68,7 +68,7 @@
                             <a href="#testimoni" class="nav-item nav-link">Testimonial</a>
                             <a href="#contact" class="nav-item nav-link">Contact</a>
                         </div>
-                <a href="https://api.whatsapp.com/send?phone=6285232092773&text=Hallo,%20Saya%20berencana%20untuk%20mengadakan%20pernikahan%20dan%20ingin%20memesan%20jasa%20Dreamy%20Affairs%20Wedding%20Organizer.%20Bisakah%20kita%20mendiskusikan%20detail%20lebih%20lanjut?" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                <a href="https://api.whatsapp.com/send?phone=6285232092773&text=Hallo,%20Saya%20berencana%20untuk%20mengadakan%20pernikahan%20dan%20ingin%20memesan%20jasa%20Dreamy%20Affairs%20Wedding%20Organizer.%20Bisakah%20kita%20mendiskusikan%20detail%20lebih%20lanjut?" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill" target="_blank">Book Now</a>
                     </div>
                 </nav>
             </div>
@@ -82,7 +82,7 @@
                     <div class="col-lg-7 col-md-12">
                         <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to Dreamy Affairs</small>
                         <h1 class="display-1 mb-4 animated bounceInDown">Book Wedding For Your Dream Event</h1>
-                        <a href="https://api.whatsapp.com/send?phone=6285232092773" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book Now</a>
+                        <a href="https://api.whatsapp.com/send?phone=6285232092773" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft" target="_blank">Book Now</a>
                         <a href="#about" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
                     </div>
                     <div class="col-lg-5 col-md-12">
@@ -289,7 +289,7 @@
                                 <p class="text-white mb-0">Decoration Leader</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/didin-oktavianda-setiawan/"><i class="fab fa-linkedin"></i></a>
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/didin-oktavianda-setiawan/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -301,7 +301,7 @@
                                 <p class="text-white mb-0">Executive Leader</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/miftahzk/"><i class="fab fa-linkedin"></i></a>
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/miftahzk/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -313,7 +313,7 @@
                                 <p class="text-white mb-0">Kitchen Leader</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/iwang-pradipta-dinoto-424535245/"><i class="fab fa-linkedin"></i></a>
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/iwang-pradipta-dinoto-424535245/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -325,7 +325,7 @@
                                 <p class="text-white mb-0">Party Chairman</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/ahmad-haidar-kamal/"><i class="fab fa-linkedin"></i></a>
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href="https://www.linkedin.com/in/ahmad-haidar-kamal/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -536,12 +536,12 @@
                             <h1 class="text-primary">Dreamy<span class="text-dark">Affairs</span></h1>
                             <p class="lh-lg mb-4">Dreamy Affairs is a website that provides Wedding Organizer services which aims to turn your dream wedding into a beautiful reality. With comprehensive services, Dreamy Affairs helps prospective couples plan, coordinate and execute their wedding perfectly. This site offers a wide selection of packages and services, including wedding location selection, decoration design, guest management, and more.</p>
                             <div class="footer-icon d-flex">
-                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="https://www.facebook.com/profile.php?id=61553562164276"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="https://www.tiktok.com/@cikwah_official?_t=8hlLmwjjulO&_r=1"><i class="fab fa-tiktok"></i></a>
-                                <a href="https://instagram.com/cikwah_official?igshid=OGQ5ZDc2ODk2ZA==" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="https://www.facebook.com/profile.php?id=61553562164276" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="https://www.tiktok.com/@cikwah_official?_t=8hlLmwjjulO&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://instagram.com/cikwah_official?igshid=OGQ5ZDc2ODk2ZA==" class="btn btn-primary btn-sm-square me-2 rounded-circle" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="https://api.whatsapp.com/send?phone=6285232092773&text=Hallo,%20Saya%20berencana%20untuk%20mengadakan%20pernikahan%20dan%20ingin%20memesan%20jasa%20Dreamy%20Affairs%20Wedding%20Organizer.%20Bisakah%20kita%20mendiskusikan%20detail%20lebih%20lanjut?" 
                                     class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-whatsapp"></i></a>
-                                <a href="https://www.linkedin.com/in/miftahzk/" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/miftahzk/" class="btn btn-primary btn-sm-square rounded-circle" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
