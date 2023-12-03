@@ -152,7 +152,7 @@
                                 <div class="faqt-item bg-primary rounded p-4 text-center">
                                     <i class="fas fa-check fa-4x mb-4 text-white"></i>
                                     <h1 class="display-4 fw-bold" data-toggle="counter-up">123</h1>
-                                    <p class="text-dark text-uppercase fw-bold mb-0">Events Complete</p>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Events<br>Complete</p>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +285,7 @@
                         <div class="team-item rounded">
                             <img class="img-fluid rounded-top " src="{{ asset('frontend/img/didin.jpg') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Didin Oktavianda. S</h4>
+                                <h4 class="text-primary">Didin Setiawanp</h4>
                                 <p class="text-white mb-0">Decoration Leader</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
@@ -362,7 +362,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">WO ini luar biasa! Semua persiapan pernikahan berjalan mulus.</p>
+                            <p class="m-0 pt-3">WO ini luar biasa! Semua persiapan pernikahan berjalan mulus.</p>
                         </div>
                     </div>
                     <div class="testimonial-item rounded bg-light">
@@ -384,7 +384,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">Terimakasih kepada WO, pernikahan kami menjadi tak terlupakan!</p>
+                            <p class="m-0 pt-3">Terimakasih kepada WO, pernikahan kami menjadi tak terlupakan!</p>
                         </div>
                     </div>
                     <div class="testimonial-item rounded bg-light">
@@ -406,7 +406,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">Profesionalisme dan kreativitas WO sungguh luar biasa. Sempurna!</p>
+                            <p class="m-0 pt-3">Profesionalisme dan kreativitas WO sungguh luar biasa. Sempurna!</p>
                         </div>
                     </div>
                     <div class="testimonial-item rounded bg-light">
@@ -428,7 +428,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">WO memberikan sentuhan ajaib pada hari istimewa kami.</p>
+                            <p class="m-0 pt-3">WO memberikan sentuhan ajaib pada hari istimewa kami.</p>
                         </div>
                     </div>
                 </div>
@@ -452,7 +452,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">Dengan bantuan WO, pernikahan kami menjadi seperti impian!</p>
+                            <p class="m-0 pt-3">Dengan bantuan WO, pernikahan kami menjadi seperti impian!</p>
                         </div>
                     </div>
                     <div class="testimonial-item rounded bg-light">
@@ -474,7 +474,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">Pelayanan WO sangat ramah dan membantu setiap langkahnya.</p>
+                            <p class="m-0 pt-3">Pelayanan WO sangat ramah dan membantu setiap langkahnya.</p>
                         </div>
                     </div>
                     <div class="testimonial-item rounded bg-light">
@@ -496,7 +496,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">WO membantu mewujudkan konsep pernikahan yang kami impikan.</p>
+                            <p class="m-0 pt-3">WO membantu mewujudkan konsep pernikahan yang kami impikan.</p>
                         </div>
                     </div>
                     <div class="testimonial-item rounded bg-light">
@@ -518,7 +518,7 @@
                                 <i class="fas fa-star text-primary"></i>
                                 <i class="fas fa-star text-primary"></i>
                             </div>
-                            <p class="fs-5 m-0 pt-3">Tidak ada kata lain selain terima kasih kepada WO!</p>
+                            <p class="m-0 pt-3">Tidak ada kata lain selain terima kasih kepada WO!</p>
                         </div>
                     </div>
                 </div>

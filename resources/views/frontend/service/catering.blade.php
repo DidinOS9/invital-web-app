@@ -94,7 +94,7 @@
                                 <div class="team-item rounded">
                                     <img class="img-fluid rounded-top " src="{{ asset('frontend/img/food-1.jpg') }}" alt="">
                                     <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                        <h4 class="text-primary">Traditional Food</h4>
+                                        <h4 class="text-primary">Traditional <br> Food</h4>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                                 <div class="team-item rounded">
                                     <img class="img-fluid rounded-top " src="{{ asset('frontend/img/food-3.jpg') }}" alt="">
                                     <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                        <h4 class="text-primary">International Food</h4>
+                                        <h4 class="text-primary">International <br> Food</h4>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                 <div class="team-item rounded">
                                     <img class="img-fluid rounded-top " src="{{ asset('frontend/img/food-4.jpg') }}" alt="">
                                     <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                        <h4 class="text-primary">Vegetarian Food</h4>
+                                        <h4 class="text-primary">Vegetarian <br> Food</h4>
                                     </div>
                                 </div>
                             </div>
